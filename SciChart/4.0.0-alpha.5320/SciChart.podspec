@@ -10,6 +10,9 @@ Pod::Spec.new do |spec|
 
     spec.source = { :http => "https://github.com/ABTSoftware/PodSpecTest-Nightly/releases/download/v#{spec.version}/SciChart_iOS_#{spec.version}.zip" }
 
+    spec.ios.framework  = 'UIKit', 'OpenGLES', 'Metal'
+    spec.osx.framework  = 'AppKit', 'Metal'
+
     spec.ios.deployment_target = '8.0'
     spec.osx.deployment_target = '10.12'
     spec.ios.vendored_frameworks = "SciChart.xcframework"
