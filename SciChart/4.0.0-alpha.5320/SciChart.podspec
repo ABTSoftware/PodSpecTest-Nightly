@@ -15,5 +15,5 @@ Pod::Spec.new do |spec|
 
     spec.ios.deployment_target = '8.0'
     spec.osx.deployment_target = '10.12'
-    spec.ios.vendored_frameworks = "SciChart.xcframework"
+    spec.vendored_frameworks = "SciChart.xcframework"
 end 
