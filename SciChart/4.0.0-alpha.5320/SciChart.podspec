@@ -13,5 +13,5 @@ Pod::Spec.new do |spec|
     spec.frameworks = "Metal", "OpenGLES", "UIKit"
 
     spec.ios.deployment_target = "8.0"
-    spec.ios.vendored_frameworks = "SciChart.framework"
+    spec.ios.vendored_frameworks = "SciChart.xcframework"
 end 
