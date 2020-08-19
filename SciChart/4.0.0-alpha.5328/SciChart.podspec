@@ -8,7 +8,10 @@ Pod::Spec.new do |spec|
     spec.author = { "SciChart Ltd." => "sales@scichart.com" }
     spec.license = { :type => "Commercial", :file => "LICENSE.txt" }
 
-    spec.source = { :http => "https://github.com/ABTSoftware/PodSpecTest-Nightly/releases/download/v#{spec.version}/SciChart_iOS_#{spec.version}.zip" }
+    spec.source = { 
+        :http => "https://github.com/ABTSoftware/PodSpecTest-Nightly/releases/download/v#{spec.version}/SciChart_iOS_#{spec.version}.zip", 
+        :type => zip
+    }
     spec.ios.framework  = 'UIKit', 'OpenGLES', 'Metal'
     spec.osx.framework  = 'AppKit', 'Metal'
 
